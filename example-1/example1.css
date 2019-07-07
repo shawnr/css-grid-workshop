@@ -1,0 +1,26 @@
+// Styles for Example 1: Three Column Traiditional Layout
+
+body {
+	color: black;
+}
+a, a:link, a:hover, a:visited, a:active {
+	color: #DB5461;
+}
+
+header {
+	background: #E8EBE4;
+}
+
+article {
+	background: #FFD9CE;
+}
+
+aside {
+	background: #C0DA74;
+}
+
+footer {
+	background: #8AE1FC;
+}
+
+// TODO: Write styles to create a traditional 3 column layout.
