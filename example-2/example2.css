@@ -1,4 +1,4 @@
-// Styles for Example 2: Mobile Three Column Traiditional Layout
+/* Styles for Example 2: Mobile Three Column Traiditional Layout */
 
 body {
 	color: black;
@@ -23,6 +23,6 @@ footer {
 	background: #8AE1FC;
 }
 
-// TODO: Write styles to make traditional 3 column layout.
+/* TODO: Write styles to make traditional 3 column layout.*/
 
-// TODO: Write media queries to change layout depending on screen size/orientation.
+/* TODO: Write media queries to change layout depending on screen size/orientation.*/
