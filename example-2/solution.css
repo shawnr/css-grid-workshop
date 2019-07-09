@@ -5,3 +5,41 @@ That's how the web is. Get used to it. Kudos on a job well-done!
 ****************************/
 
 /* TODO: Create an example solution. */
+
+body {
+  display: grid;
+  grid-gap: 1em 1ex;
+  grid-template-areas:
+    'header header '
+    'main   sidebar'
+    'footer footer ';
+  grid-template-columns: 1fr 20ch;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+article {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 60ch) {
+  body {
+    grid-template-areas:
+      'header '
+      'sidebar'
+      'main   '
+      'footer ';
+    grid-template-columns: 100%;
+  }
+}

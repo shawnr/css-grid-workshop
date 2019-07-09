@@ -1,26 +1,35 @@
 /* Styles for Example 2: Mobile Three Column Traiditional Layout */
 
 body {
-	color: black;
+  color: black;
+  margin: 0;
 }
+
 a, a:link, a:hover, a:visited, a:active {
-	color: #DB5461;
+  color: #DB5461;
+}
+
+body > article,
+body > aside,
+body > footer,
+body > header {
+  padding: 1em 1ex;
 }
 
 header {
-	background: #E8EBE4;
+  background: #E8EBE4;
 }
 
 article {
-	background: #FFD9CE;
+  background: #FFD9CE;
 }
 
 aside {
-	background: #C0DA74;
+  background: #C0DA74;
 }
 
 footer {
-	background: #8AE1FC;
+  background: #8AE1FC;
 }
 
 /* TODO: Write styles to make traditional 3 column layout.*/
