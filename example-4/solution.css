@@ -9,11 +9,11 @@ That's how the web is. Get used to it. Kudos on a job well-done!
 body {
   display: grid;
   grid-gap: 1em 1ex;
-  grid-template-areas:
-    'header header '
-    'main   sidebar'
-    'footer footer ';
-  grid-template-columns: 1fr 20ch;
+  grid-template:
+    'header  header' auto
+    'sidebar main  ' minmax(min-content, 1fr)
+    'footer  footer' auto
+  / 20ch 1fr;
   min-height: 100vh;
 }
 
@@ -21,16 +21,70 @@ header {
   grid-area: header;
 }
 
+header nav ul {
+  display: flex;
+  margin-left: -1em;
+}
+
+header nav a {
+  margin-left: 1em;
+}
+
 aside {
+  display: flex;
+  flex-direction: column;
   grid-area: sidebar;
 }
 
-article {
+aside li:not(:first-child) {
+  border-top: 1px solid black;
+}
+
+main {
   grid-area: main;
 }
 
 footer {
   grid-area: footer;
+}
+
+.list-of-articles {
+  display: grid;
+  grid-gap: 1ex;
+  grid-template-columns: repeat(2, auto);
+}
+
+.list-of-articles article {
+  display: flow-root;
+}
+
+.list-of-articles li article img {
+  max-width: 50%;
+}
+
+.list-of-articles li:nth-child(odd) article img {
+  float: left;
+}
+
+.list-of-articles li:nth-child(even) article img {
+  float: right;
+}
+
+.list-of-articles article .actions {
+  align-items: center;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1ex 1em;
+  justify-content: space-between;
+  padding: 1ex;
+}
+
+@media screen and (max-width: 90ch) {
+  .list-of-articles {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 60ch) {

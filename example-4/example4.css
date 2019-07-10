@@ -9,15 +9,30 @@ a, a:link, a:hover, a:visited, a:active {
   color: #DB5461;
 }
 
-body > article,
-body > aside,
-body > footer,
-body > header {
+button, button:active {
+  background: #5461DB;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  padding: 1ex 1em;
+  text-decoration: underline;
+}
+
+main,
+article,
+aside,
+footer,
+header {
   padding: 1em 1ex;
 }
 
 header {
   background: #E8EBE4;
+}
+
+main {
+  background: #D9CEFF;
 }
 
 article {
@@ -30,6 +45,23 @@ aside {
 
 footer {
   background: #8AE1FC;
+}
+
+article > menu {
+  background: #FFF2CE;
+}
+
+menu,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-of-articles > li {
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 /* TODO: Write styles to combine the use of grid and flex. */
