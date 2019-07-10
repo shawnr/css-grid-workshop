@@ -10,100 +10,139 @@
     <header>
       <h1>Grids with Flex</h1>
       <nav>
-        <a href="#">Home</a> 
-        <a href="#">About</a> 
-        <a href="#">Contact</a> 
-      </nav> 
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <aside>
-      <h3>Sidebar Content</h3> 
+      <h3>Sidebar Content</h3>
       <ul>
         <li>
-          <h4>Sidebar title</h4> 
-          <p>Curabitur vitae enim nec nisl hendrerit pulvinar sit
-        amet in quam.</p> 
+          <h4>Sidebar title</h4>
+          <p>
+            Curabitur vitae enim nec nisl hendrerit pulvinar sit amet
+            in quam.
+          </p>
         </li>
-        <li>
-          <h4>Sidebar title</h4> 
-          <p>Fusce at hendrerit purus.</p> 
-        </li>
-        <li>
-          <h4>Sidebar title</h4> 
-          <p>Maecenas id erat
-        luctus, laoreet mi interdum, laoreet augue.</p> 
-        </li>
-        <li>
-          <h4>Sidebar title</h4> 
-          <p>Varius iaculis non aliquam ligula.</p> 
-        </li>
-        <li>
-          <h4>Sidebar title</h4> 
-          <p>Donec sodales ante dolor, non dapibus justo lacinia at.</p> 
-        </li>
-        <li>
-          <h4>Sidebar title</h4> 
-          <p>Duis accumsan rhoncus pulvinar.</p> 
-        </li> 
-      </ul> 
-    </aside> 
 
-    <article>
-      <h2>List of Items</h2>
-      <ul>
         <li>
-          <img src="grey.png" alt="placeholder image" />
-          <h3>Item Title</h3>
-          <p class="description">
-            Aliquam dignissim turpis eu tempus ullamcorper. Aenean porttitor tempor 
-            dolor, non pulvinar augue vulputate id.
-          </p>
-          <footer>
-            <a href="#">Action</a> 
-            <a href="#">Alt Action</a>
-          </footer> 
+          <h4>Sidebar title</h4>
+          <p>Fusce at hendrerit purus.</p>
         </li>
-        <li class="alt">
-          <img src="grey.png" alt="placeholder image" />
-          <h3>Item Title</h3>
-          <p class="description">
-            Aliquam dignissim turpis eu tempus ullamcorper. Aenean porttitor tempor 
-            dolor, non pulvinar augue vulputate id.
-          </p>
-          <footer>
-            <a href="#">Action</a> 
-            <a href="#">Alt Action</a>
-          </footer> 
-        </li>
+
         <li>
-          <img src="grey.png" alt="placeholder image" />
-          <h3>Item Title</h3>
-          <p class="description">
-            Aliquam dignissim turpis eu tempus ullamcorper. Aenean porttitor tempor 
-            dolor, non pulvinar augue vulputate id.
+          <h4>Sidebar title</h4>
+          <p>
+            Maecenas id erat luctus, laoreet mi interdum, laoreet
+            augue.
           </p>
-          <footer>
-            <a href="#">Action</a> 
-            <a href="#">Alt Action</a>
-          </footer> 
         </li>
-        <li class="alt">
-          <img src="grey.png" alt="placeholder image" />
-          <h3>Item Title</h3>
-          <p class="description">
-            Aliquam dignissim turpis eu tempus ullamcorper. Aenean porttitor tempor 
-            dolor, non pulvinar augue vulputate id.
-          </p>
-          <footer>
-            <a href="#">Action</a> 
-            <a href="#">Alt Action</a>
-          </footer> 
+
+        <li>
+          <h4>Sidebar title</h4>
+          <p>Varius iaculis non aliquam ligula.</p>
+        </li>
+
+        <li>
+          <h4>Sidebar title</h4>
+          <p>Donec sodales ante dolor, non dapibus justo lacinia at.</p>
+        </li>
+
+        <li>
+          <h4>Sidebar title</h4>
+          <p>Duis accumsan rhoncus pulvinar.</p>
         </li>
       </ul>
-    </article>
+    </aside>
+
+    <main>
+      <h2>List of Articles</h2>
+
+      <ul class="list-of-articles">
+        <li>
+          <article>
+            <img src="heart-suit.svg" alt="A heart suit" />
+
+            <h3>Heart</h3>
+
+            <p class="description">
+              Aliquam dignissim turpis eu tempus ullamcorper. Aenean
+              porttitor tempor dolor, non pulvinar augue vulputate id.
+            </p>
+
+            <menu class="actions">
+              <li><button>Action</button></li>
+              <li><button>Another Action</button></li>
+              <li><button>Stop Action</button></li>
+            </menu>
+          </article>
+        </li>
+
+        <li class="alt">
+          <article>
+            <img src="spade-suit.svg" alt="A spade suit" />
+
+            <h3>Spade</h3>
+
+            <p class="description">
+              Aliquam dignissim turpis eu tempus ullamcorper. Aenean
+              porttitor tempor dolor, non pulvinar augue vulputate id.
+            </p>
+
+            <menu class="actions">
+              <li><button>Action</button></li>
+              <li><button>Another Action</button></li>
+              <li><button>Stop Action</button></li>
+            </menu>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <img src="diamond-suit.svg" alt="A diamond suit" />
+
+            <h3>Diamond</h3>
+
+            <p class="description">
+              Aliquam dignissim turpis eu tempus ullamcorper. Aenean
+              porttitor tempor dolor, non pulvinar augue vulputate id.
+            </p>
+
+            <menu class="actions">
+              <li><button>Action</button></li>
+              <li><button>Another Action</button></li>
+              <li><button>Stop Action</button></li>
+            </menu>
+          </article>
+        </li>
+
+        <li class="alt">
+          <article>
+            <img src="club-suit.svg" alt="A club suit" />
+
+            <h3>Club</h3>
+
+            <p class="description">
+              Aliquam dignissim turpis eu tempus ullamcorper. Aenean
+              porttitor tempor dolor, non pulvinar augue vulputate id.
+            </p>
+
+            <menu class="actions">
+              <li><button>Action</button></li>
+              <li><button>Another Action</button></li>
+              <li><button>Stop Action</button></li>
+            </menu>
+          </article>
+        </li>
+      </ul>
+    </main>
 
     <footer>
       Copyleft &copy; 2019 for all the people who love CSS.
-    </footer> 
+    </footer>
   </body>
 </html>
