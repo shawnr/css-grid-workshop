@@ -1,4 +1,4 @@
-/* Styles for Example 3: Graceful Grids Example */
+/* Styles for Example 4: Grids with Flex */
 
 body {
   color: black;
@@ -32,6 +32,6 @@ footer {
   background: #8AE1FC;
 }
 
-/* TODO: Write styles to create alternating layout for items. */
+/* TODO: Write styles to combine the use of grid and flex. */
 
 /* TODO: Write media queries to change layout depending on screen size/orientation.*/
