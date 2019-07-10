@@ -17,7 +17,6 @@ not the ONLY way to meet the goal. You are encouraged to experiment and find you
 
 ## Stretch Goals
 
-* Add more than one media query breakpoint
-* Experiment with re-ordering the content based on viewport size
-* This same concept can be applied to methods of allowing users to customize an interface -- experiment with that idea
+* Experiment with other ways to lay out the page and items
+* Use media queries to alter the way the layout appears on mobile devices
 
