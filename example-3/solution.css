@@ -25,11 +25,45 @@ aside {
   grid-area: sidebar;
 }
 
-article {
+main {
   grid-area: main;
 }
 
 footer {
+  grid-area: footer;
+}
+
+.list-of-articles article {
+  display: grid;
+  grid-gap: 1em 1ex;
+  grid-template:
+    'img    title  ' min-content
+    'img    content' 1fr
+    'footer footer ' min-content
+  / min-content 1fr;
+}
+
+.list-of-articles li:nth-child(even) article {
+  grid-template-areas:
+    'title   img   '
+    'content img   '
+    'footer  footer';
+  grid-template-columns: 1fr min-content;
+}
+
+.list-of-articles article img {
+  grid-area: img;
+}
+
+.list-of-articles article h3 {
+  grid-area: title;
+}
+
+.list-of-articles article p {
+  grid-area: content;
+}
+
+.list-of-articles article footer {
   grid-area: footer;
 }
 
